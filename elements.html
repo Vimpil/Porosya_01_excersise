@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!--jquery-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--flexslider plugin-->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  <script src="js/jquery.flexslider.js"></script>
+  
+  <!--fancybox css + js -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <!-- fancybox; jquery main library; bootstrap -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+  <!--bootstrap-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!--<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/ie8style.css" type="text/css" media="all">
+  <script src="js/script.js"></script>
+  
+</head><body>
+<!-- IE FIX -->
+<script type="text/javascript">
+//if(Function('/*@cc_on return document.documentMode===10@*/')()){ $("html").addClass("ie9"); }
+</script>
+<!--[if IE 8]><div class="ie8 ie9 ie10"><![endif]-->
+<!--[if IE 9]><div class="ie9 ie10"><![endif]-->
+<!--[if gte IE 10]><div class="ie10"><![endif]-->
+<!-- END IE FIX -->
+<!--HEADER-->
+<div class="fluid-container header-logo">
+  <div class="container right">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="header-form">
+      <a id="phone_number" class="BRUS" href="tel:+79602041579">8 (960) 204-15-79</a>
+      <a href="#" class="after-up" id="open-header-form">Обратный звонок</a>
+      <form id="header-form" class="none">
+        <input type="text" name="callback" placeholder="Ваш телефон">
+        <input type="submit" value="Позвоните мне!" class="button-green">
+      </form>
+    </div>
+  </div>
+</div>
+<!--MENU-->
+<div class="menu-wrap">
+  <!--MAIN LINE-->
+  <div class="fluid-container menu-row">
+    <div class="container">
+      <a href="#" class="search-button bigger" id="search-button-main"></a>
+      <ol>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#" id="project-button" class="has-submenu">Проекты</a>
+        </li>
+        <li>
+          <a href="#">Акции</a>
+        </li>
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Галерея</a>
+        </li>
+        <li>
+          <a href="#">Вакансии</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <!--END MAIN LINE-->
+  
+  <!-- PROJECT LINE -->
+  <div class="fluid-container project-row none">
+    <div class="container">
+      <ol>
+        <li>
+          <a href="#">
+            <img src="images/proj1.png">
+            <span>Дома</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/proj2.png">
+            <span>Бани</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/proj3.png">
+            <span>Фундаменты</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="last-child">
+            <img src="images/proj4.png">
+            <span>Летние кухни</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+    <!-- END PROJECT LINE -->
+  </div>
+  <!-- END MENU -->
+  <!-- SEARCH LINE -->
+  <div class="fluid-container search-row none" id="search-main-line">
+    <div class="container">
+      <input type="text" name="search"></input>
+      <input type="submit" value="поиск" class="button-grey"></input>
+    </div>
+  </div>
+  <!-- END SEARCH LINE -->
+  <!-- END HEADER -->
+  <!-- FIX_MENU -->
+  <div class="fix-menu none">
+    <div class="fluid-container menu-row">
+      <div class="container">
+        <div class="button-menu">
+          <div class="b-m_bigger"></div>
+        </div>
+        <div class="fix-menu-right">
+          <a href="#callback-popup" class="callback-popup fixGroup">Обратный звонок</a>
+          <a id="phone_number_fix-number" href="tel:+79602041579">8 (960) 204-15-79</a>
+        </div>
+        <div class="fix-text fixGroup">
+          <a href="index.html"></a>
+        </div>
+      </div>
+    </div>
+    <!-- ITEM LINE -->
+    <div class="fluid-container items-row none">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 menu-row">
+            <ol>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#" id="project-button-fix" class="has-submenu">Проекты</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Вакансии</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END FIX_MENU -->
+  <!-- BREADCRUMBS -->
+  <div class="container breadcrumbs">
+    <div class="row">
+      <div class="col-xs-6">
+        <a href="#">Главная</a>
+        <span class="bread-separate"></span>
+        <a href="#">Каталог</a>
+        <span class="bread-separate"></span>
+        <span class="bread-current">Проекты домов</span>
+      </div>
+    </div>
+  </div>
+  <!-- END BREADCRUMBS -->
+  <!-- 2 COLUMS -->
+  <div class="container content">
+    
+    <!-- LEFT COLUMN -->
+    <div class="main-left">
+      <div class="text">
+        <h1>Строительство из бруса</h1>
+        <p>Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. Стоит уточнить, что какими бы прекрасными ни были загородные дома на вторичном рынке жилья, они не могут в полной мере моответствовать всем требованиям будущего домовладельца.</p>
+        <p>Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. Стоит уточнить, что какими бы прекрасными ни были загородные дома на вторичном рынке жилья, они не могут в полной мере моответствовать всем требованиям будущего домовладельца.</p>
+        <h2>Постройте дом своей мечты</h2>
+        <p>Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. Стоит уточнить, что какими бы прекрасными ни были загородные дома на вторичном рынке жилья, они не могут в полной мере моответствовать всем требованиям будущего домовладельца.</p>
+        <h3>загородные дома на вторичнос рынке жильяна вторичнос рынке жильяна вторичнос рынке жилья</h3>
+        <p>Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. Стоит уточнить, что какими бы прекрасными ни были загородные дома на вторичном рынке жилья, они не могут в полной мере моответствовать всем требованиям будущего домовладельца.</p>
+        <ol>
+          <li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. </li>
+          <li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания.</li>
+          <li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания.</li>
+        </ol>
+        <p>Любой здравомыслящий человек мечтает о красивом, уютном доме в живописном местечке за городом, который можно использовать для сезонного или постоянного проживания. Стоит уточнить, что какими бы прекрасными ни были загородные дома на вторичном рынке жилья, они не могут в полной мере моответствовать всем требованиям будущего домовладельца.</p>
+        <h4>Выбирая нас ,вы получаете:</h4>
+        <h5>Надежного исполнителя</h5>
+        <ul>
+          <li>всем требованиям будущего домовладельца.</li>
+          <ul>
+            <li>всем требованиям будущего домовладельца.</li>
+            <li>всем требованиям будущего домовладельца.</li>
+          </ul>
+          <li>всем требованиям будущего домовладельца.</li>
+          <li>всем требованиям будущего домовладельца.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- END LEFT COLUMN -->
+    
+    <!-- RIGHT COLUMN -->
+    <div class="main-right">
+      <!--BANNER-->
+      <a href="#" class="banner">
+        <img src="images/ban1.png">
+      </a>
+      <!-- LIST -->
+      <div class="main-list">
+        <div class="main-list-title">
+          Важно знать
+        </div>
+        <ul>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Документация</a></li>
+          <li><a href="#">Процесс строительства</a></li>
+          <li><a href="#">Отзывы</a></li>
+        </ul>
+      </div>
+      <!-- ARTICLES -->
+      <div class="main-right-slide main-articles flexslider">
+        <ul class="slides">
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство дом1а из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство до2ма из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство до3ма из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <div class="clearfix"></div>
+          <div class="main-articles-buttons">
+            <div class="art-right"><div class="right-bigger"></div></div>
+            <div class="art-left"><div class="left-bigger"></div></div>
+            <a href="#">В галерею<span class="to_gal_big"></span></a>
+          </div>
+        </ul>
+      </div>
+      <!-- END ARTICLES -->
+      
+      <!-- WORKS -->
+      <div class="main-list">
+        <div class="main-list-title">
+          Наши работы:
+        </div>
+      </div>
+      <div class="main-right-slide main-works flexslider">
+        <ul class="slides">
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство дома4 из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство дома 5из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="main-articles-title">
+                Строительство дома 6из бруса под ключ
+              </div>
+              <img src="images/dom2.png"/>
+            </a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+        <div class="main-articles-buttons">
+          <div class="art-right"><div class="right-bigger"></div></div>
+          <div class="art-left"><div class="left-bigger"></div></div>
+          <a href="#">В галерею<span class="to_gal_big2"></span></a>
+        </div>
+      </div>
+    </div>
+    <!-- END WORKS -->
+  </div>
+  <!-- END RIGHT COLUMN -->
+  
+</div>
+<!-- END 2 COLUMS -->
+<!-- GALLERY -->
+<div class="container gallery">
+  <h2>Галерея</h2>
+  <!-- for any photo project make block gallery group -->
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-1" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-1" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-1" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-2" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-2" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-2" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-3" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-3" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-3" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-4" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-4" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-4" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-5" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-5" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-5" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-6" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-6" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-6" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-7" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-7" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-7" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-8" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-8" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-8" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-9" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-9" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-9" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-10" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-10" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-10" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-11" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-11" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-11" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-12" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-12" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-12" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-13" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-13" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-13" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-14" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-14" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-14" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-15" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-15" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-15" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="gallery-group">
+    <!-- if in project many photos, make on each photo block <a>, user view only first, discription must be on all <a> or only first, attribute rel may increment in all next gallery group. After each group paste js, which include fancybox, like in script.js. Number of photos must be in first or in all <a>, block shadow-->
+    <a href="images/dom1.png" rel="group-16" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+      <div class="gallery-shadow">
+        <div class="photo-icon"></div>
+        <div class="photo-number">6 фото</div>
+      </div>
+    </a>
+    <a href="images/dom2.png" rel="group-16" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+    <a href="images/dom3.png" rel="group-16" class="fancyboxGal">
+      <img src="images/gal1.png"/>
+      <p>Дом по проекту д-47 в д. М...</p>
+    </a>
+  </div>
+  <div class="clearfix"></div>
+  <div class="paginatio right">
+    <a href="#" class="pag-active pag-first">Первая</a>
+    <span class="pag-unactive pag-first">Первая</span>
+    <a href="#" class="pag-number">1</a>
+    <a href="#" class="pag-number pag-current">2</a>
+    <a href="#" class="pag-number">3</a>
+    <span class="pag-unactive pag-end">Первая</span>
+    <a href="#" class="pag-active pag-end">Последняя</a>
+  </div>
+</div>
+<!-- END GALLERY -->
+<!-- FORM -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="h2">Формы</div>
+      <div class="h3">Оставьте заявку на этот проект:</div>
+      <div class="form">
+        <form class="forma">
+          <div class="form-line">
+            <span><input placeholder="Ваше имя" type="text"/></span>
+          </div>
+          <div class="form-line">
+            <span><input placeholder="Ваш телефон" type="text"/></span>
+          </div>
+          <div class="form-line">
+            <span><input placeholder="Ваш e-mail" type="text"/></span>
+            <span><input type="checkbox" id="frjy" checked="checked"><label for="frjy" class="bigger"><span></span><i>Подписаться на новости</i></label></span>
+          </div>
+          <div class="form-line">
+            <span><textarea placeholder="Сообщение" type="text"></textarea></span>
+            <div class="prikr"><input type="file" size="1" multiple style="-moz-opacity: 0;  filter: alpha(opacity=0);   opacity: 0;" name="file" id="file"><span id="name"><span class="file_bigger"></span>Прикрепить файл </span></div>
+          </div>
+          <div class="form-line">
+            <span>
+              <div class="svaz">
+                <span class="form-text">Связаться</span>
+                <input type="radio" checked="checked" name="fo2" id="for2"/>
+                <label for="for2" class="bigger">
+                  <div>По телефону</div>
+                </label>
+                <input type="radio" name="fo2" id="for3"/>
+                <label for="for3" class="bigger">
+                  <div>По e-mail</div>
+                </label>
+              </div>
+            </span>
+          </div>
+          <div class="form-line">
+            <span>
+              <span class="form-text">Время звонка:</span>
+              <input type="hidden" id="spi"/>
+              <div>
+                <div class="time_bigger"></div>
+                <ul class = "spih-t" id="inner_time_menu_ID">
+                  <li class="inner_time_menu init">c 9.00 до 12.00</li>
+                  <ul class="inner_time_menu none">
+                    <li>c 9.00 до 12.00</li>
+                    <li>c 12.00 до 17.00</li>
+                    <li>c 17.00 до 21.00</li>
+                  </ul>
+                </ul>
+              </div>
+            </span>
+          </div>
+          <div class="form-line">
+            <span class="form-info">
+              <i>Мы не передаем информацию третьим лицам</i>
+            </span>
+            <span  class="form-submit" ><input type="submit" value="Оставить заявку" class="button-green"/></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END OF FORM -->
+<!-- Table -->
+<div class="container tabl">
+  <div class="h2">Таблица</div>
+  <table>
+    <tr>
+      <td class="th1">Проект дома</td>
+      <td class="th2" colspan="2">Цена проекта дома</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="th3"><b>Брусовой вариант</b><br>100x150 /  200x150 мм</td>
+      <td class="th3"><b>Каркасный вариант</b><br>50 / 150 мм</td>
+    </tr>
+    <tr>
+      <td><b>БД - 43</b></td>
+      <td>300 / 400 / 500 Т<span class="rubl">a</span></td>
+      <td>300 / 400 Т<span class="rubl">a</span></td>
+    </tr>
+    <tr>
+      <td><b>БД - 40</b></td>
+      <td>400 / 450 / 550 Т<span class="rubl">a</span></td>
+      <td>300 / 400 Т<span class="rubl">a</span></td>
+    </tr>
+    <tr>
+      <td><b>БД - 41</b></td>
+      <td>1 000 / 1 300 / 1 500 Т<span class="rubl">a</span><br>+ доставка</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<!-- END Table -->
+<!-- POPUP CALLBACK -->
+<div id="callback-popup" class="callback-popup-wrap" style="display: none">
+  <div>Заказать обратный <b>звонок!</b></div>
+  <p>маленький текст</p>
+  <form id="popup-form">
+    <input type="text" name="callback" placeholder="Ваш email">
+    <input type="submit" value="Позвоните мне!" class="button-red">
+  </form>
+</div>
+</div>
+<!-- END POPUP CALLBACK -->
+<!-- RIGHT MENU -->
+<div class="right-menu none" id="r-menu">
+<a href="#" class="r-m-item">
+  Расчет дома
+</a>
+<a href="#"  class="r-m-item">
+  Каталог
+</a>
+<a href="#"  class="r-m-item">
+  Отзывы
+</a>
+<a href="#"  class="r-m-item">
+  Вопрос-ответ
+</a>
+</div>
+<!-- END OF RIGHT MENU -->
+<!-- COMMENTS -->
+<div class="container otz">
+<div class="h2">Отзывы</div>
+<div class="otz-item">
+  <img src="images/otz1.png"/>
+  <div class="otz-text">
+    <b>Владимир:</b>
+    <p>Надеяться на две группы могли бы тогда. Поглощение света очень много, и на отождествление лишь слабые галактики и. Содержащей десятки квадратных минут отождествления оптических объектов были.Надеяться на две группы могли бы тогда. Поглощение света очень много, и на отождествление лишь слабые галактики и. Содержащей десятки квадратных минут отождествления оптических объектов были.</p>
+    
+  </div>
+</div>
+<div class="otz-item">
+  <img src="images/otz2.png"/>
+  <div class="otz-text">
+    <b>ADS Group:</b>
+    <p>Надеяться на две группы могли бы тогда. Поглощение света очень много, и на отождествление лишь слабые галактики и. Содержащей десятки квадратных минут отождествления оптических объектов были.</p>
+    
+  </div>
+</div>
+<div class="otz-item">
+  <img src="images/otz3.png"/>
+  <div class="otz-text">
+    <b>Дмитрий Васильев:</b>
+    <p>Надеяться на две группы могли бы тогда. Поглощение света очень много, и на отождествление лишь слабые галактики и. Содержащей десятки квадратных минут отождествления оптических объектов были.</p>
+    
+  </div>
+</div>
+</div>
+<!-- END COMMENTS -->
+<!-- FAQ -->
+<div class="container faq">
+<div class="h2">Вопрос-ответ</div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <span> Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания #1</span>
+      </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+        <span>Пункт Группы Свертывания #2</span>
+      </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+        <span>Пункт Группы Свертывания #3</span>
+      </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF FAQ -->
+<!-- QUOTE -->
+<div class="container quotes">
+<div class="h2">Цитата</div>
+<div class="quote-body">
+  <div class="quote-margin">«  »</div>
+  <div class="quote-text">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
+  </div>
+</div>
+</div>
+<!-- END OF QUOTE -->
+<!-- FOOTER -->
+<div class="fluid-container footer">
+<div class="container">
+  <div class="col-xs-12">
+    <div class="footer-1">
+      <div class="li"></div>
+      © 2015 СК “Брусмонтаж”
+      <a href="http://kuratov.ru"><span>Разработка сайта:</span><span class="siteDev_big"></span><br>kuratov.ru</a>
+    </div>
+    <div class="footer-2">
+      <div class="footer-title">
+        Мы в интернете:
+      </div>
+      <p class="footer-grey">
+        Пишите нам на почту: <br><a href="mailto://brusmontazh@yandex.ru"><span class="email_big"></span>brusmontazh@yandex.ru</a>
+      </p>
+      <p class="footer-grey soc">
+        Наши страницы в соц. сетях: <br/>
+        <a href="#" class="vk"><span class="vk_bigger"></span></a>
+        <a href="#" class="fb"><span class="fb_bigger"></span></a>
+      </p>
+    </div>
+    <div class="footer-3">
+      <div class="footer-title">
+        Производственная база:
+      </div>
+      <a class="BAZA_BRUC" href="tel:+79602041579">8 (960) 204-15-79<span class="proizBaz_big"></span></a><br/>
+      <p class="footer-grey">
+        Новгородская обл., г. Пестово, ул.Лермонтова
+      </p>
+    </div>
+    <div class="footer-4">
+      <div class="footer-title">
+        Офис в Рыбинске:
+      </div>
+      <a class="NIKOLAY_BRUC" href="tel:+79301180570">8(930)1180570<span class="mikola_phone_big"></span></a> - Николай<br/>
+      г. Рыбинск, ул.Боткина, 5<br/>
+      Звоните при посещении офиса заранее по телефону: <br/>
+      <a class="OFFICE_BRUC" href="tel:+79602061569">8(960)206-15-69<span class="office_phone_big"></span></a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END FOOTER -->
+</body></html>

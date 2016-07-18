@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!--jquery-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!--flexslider plugin-->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <script src="js/jquery.flexslider.js"></script>     
+  
+  <!--fancybox css + js -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>  
+
+  <!-- fancybox; jquery main library; bootstrap -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+   
+  <!--bootstrap-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+
+    <!--<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/ie8style.css" type="text/css" media="all">
+    <script src="js/script.js"></script>  
+  
+  </head><body>
+  <!-- IE FIX -->
+<script type="text/javascript">
+//if(Function('/*@cc_on return document.documentMode===10@*/')()){ $("html").addClass("ie9"); }
+    </script>
+<!--[if IE 8]><div class="ie8 ie9 ie10"><![endif]--> 
+<!--[if IE 9]><div class="ie9 ie10"><![endif]--> 
+
+<!--[if gte IE 10]><div class="ie10"><![endif]--> 
+<!-- END IE FIX -->
+<!--HEADER-->
+<div class="fluid-container header-logo">
+  <div class="container right">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="header-form">
+      <a id="phone_number" class="BRUS" href="tel:+79602041579">8 (960) 204-15-79</a>
+      <a href="#" class="after-up" id="open-header-form">Обратный звонок</a>
+      <form id="header-form" class="none">
+        <input type="text" name="callback" placeholder="Ваш телефон">
+        <input type="submit" value="Позвоните мне!" class="button-green">
+      </form>
+    </div>
+  </div>
+</div>
+<!--MENU-->
+<div class="menu-wrap">
+  <!--MAIN LINE-->
+  <div class="fluid-container menu-row">
+    <div class="container">
+      <a href="#" class="search-button bigger" id="search-button-main"></a>
+      <ol>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#" id="project-button" class="has-submenu">Проекты</a>
+        </li>
+        <li>
+          <a href="#">Акции</a>
+        </li>
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Галерея</a>
+        </li>
+        <li>
+          <a href="#">Вакансии</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <!--END MAIN LINE-->
+  
+  <!-- PROJECT LINE -->
+  <div class="fluid-container project-row none">
+    <div class="container">
+      <ol>
+        <li>
+          <a href="#">
+            <img src="images/proj1.png">
+            <span>Дома</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/proj2.png">
+            <span>Бани</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/proj3.png">
+            <span>Фундаменты</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="last-child">
+            <img src="images/proj4.png">
+            <span>Летние кухни</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+    <!-- END PROJECT LINE -->
+  </div>
+  <!-- END MENU -->
+  <!-- SEARCH LINE -->
+  <div class="fluid-container search-row none" id="search-main-line">
+    <div class="container">
+      <input type="text" name="search"></input>
+      <input type="submit" value="поиск" class="button-grey"></input>
+    </div>
+  </div>
+  <!-- END SEARCH LINE -->
+  <!-- END HEADER -->
+
+    <!-- FIX_MENU -->
+      <div class="fix-menu none">
+        <div class="fluid-container menu-row">
+          <div class="container">
+            <div class="button-menu"></div>
+              <div class="fix-menu-right">
+                <a href="#callback-popup" class="callback-popup">Обратный звонок</a>
+                <span>8 (960) 204-15-79</span>
+              </div>
+            <div class="fix-text">
+              <a href="index.html"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END FIX_MENU -->
+    <!-- POPUP CALLBACK -->
+      <div id="callback-popup" class="callback-popup-wrap" style="display: none">
+        <div>Заказать обратный <b>звонок!</b></div>
+        <p>маленький текст</p>
+          <form id="popup-form">
+            <input type="text" name="callback" placeholder="Ваш email">
+            <input type="submit" value="Позвоните мне!" class="button-red">
+          </form>
+        </div>
+      </div>
+    <!-- END POPUP CALLBACK -->
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>   
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>
+    <p>some greate test</p>    
+</body></html>

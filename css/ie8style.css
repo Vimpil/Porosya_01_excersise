@@ -1,0 +1,70 @@
+.ie8 .container {
+	min-width: 1000px !important;
+	max-width: 1170px !important;
+	margin: auto !important;
+}
+.ie8 input {
+	display: inline-block !important;
+}
+.ie8 input+label:before {
+	display: none !important;
+}
+.ie8 .main-articles-title {
+	background: #404040;
+}
+.ie8 .gallery-shadow {
+	background: #404040;
+}
+.ie8 .search-row input[type=submit] {
+	height: 34px;
+}
+.ie8 .project-row li {
+	padding: 28px 36px !important;
+	float: left;
+}
+.ie8 .project-row a {
+	padding: 0px !important;
+}
+.ie8 .project-row li:first-child {
+	padding-left: 0px !important;
+}
+.ie8 .project-row #last-child {
+	padding-right: 0 !important;
+}
+.ie8 .project-row a span {
+	display: inline-block;
+}
+.ie8 .project-row img {
+	border: 2px solid grey;
+}
+.ie8 .cat-line .tab-item {
+	border: 1px solid grey;
+	margin: 5px;
+}
+.ie8 .tab-shadow {
+	background: #404040;
+}
+.ie8 .cover {
+	-moz-opacity: 0.50;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+.ie8 .content {
+	margin-top: 40px !important;
+	margin-bottom: 45px !important;
+}
+.ie8 #frjy {
+	position: absolute;
+	margin-left: 30px !important;
+	margin-top: 11px !important;
+}
+.ie8 #for2 {
+	position: absolute;
+	margin-left: 5px !important;
+	margin-top: 5px !important;
+}
+.ie8 #for3 {
+	position: absolute;
+	margin-left: 5px !important;
+	margin-top: 5px !important;
+}
