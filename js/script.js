@@ -1,4 +1,25 @@
 $(document).ready(function() {
+    $('.carousel').carousel();
+    $("#carouselExampleIndicators").carousel();
+     $('.flexslider_quotes').flexslider({
+         animation: "slide",
+         controlNav: false,
+         smoothHeight: true, 
+         animation: "fade",
+         start: function() {
+             $("#quotes_slider_next").on("click", function(e) {
+                 console.log("heya");
+                 $(".flexslider_quotes .flex-prev").trigger('click');
+             });
+             $("#quotes_slider_prev").on("click", function(e) {
+                 console.log("heya");
+                 $(".flexslider_quotes .flex-next").trigger('click');
+             });
+         }
+     });
+$('#carouselExampleIndicators').on('slide.bs.carousel', function () {
+  // do something…
+})
     $(".fancybox").fancybox();
     $('.flexslider').flexslider({
         animation: "fade", // slide or fade
