@@ -658,7 +658,8 @@
                               <form class="forma">
                                    <div class="form-line">
                                         <span>
-                                             <input placeholder="Ваше имя" type="text" />
+                                             <input placeholder="Ваше имя" type="text" id="name" name="name"
+                                             data-validation="length alphanumeric" data-validation-length="min4"/>
                                         </span>
                                    </div>
                                    <div class="form-line">
@@ -1006,7 +1007,9 @@
           <script src="bootstrap/js/bootstrap.min.js"></script>
           <!--flexslider plugin-->
           <script type='text/javascript' src="js/jquery.flexslider.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
           <script type='text/javascript' src="js/script.js"></script>
+
      </body>
 
 </html>
