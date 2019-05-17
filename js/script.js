@@ -28,7 +28,8 @@ $(document).ready(function() {
     $(".fancybox").fancybox();
     $('.flexslider').flexslider({
         animation: "fade", // slide or fade
-        controlsContainer: ".flex-container" // the container that holds the flexslider
+        controlsContainer: ".flex-container", // the container that holds the flexslider
+        controlNav: false,
     });
 
 

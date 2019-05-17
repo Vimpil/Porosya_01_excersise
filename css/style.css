@@ -1504,6 +1504,7 @@ a:hover, a:focus{
 .flexslider {margin: 0; padding: 0;}
 .slides, .slides > li, .flex-control-nav, .flex-direction-nav {
 	position: absolute;
+  display: contents;
 }
 span.help-block.form-error{
   color:white;
